@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <PackageId>ActionsPackage</PackageId>
+    <Version>1.0.0</Version>
+    <Authors>Sanjeev</Authors>
+    <Company>github</Company>
+    <!-- <RepositoryUrl>https://github.com/nuget-v2-lab/OctocatApp</RepositoryUrl> -->
+    <PackageTags>latest</PackageTags>
+  </PropertyGroup>
+
+  <ItemGroup>
+      <PackageReference Include="Nuget-Package-Repo-Link" Version="1.0.0" />
+  </ItemGroup>
+</Project>
