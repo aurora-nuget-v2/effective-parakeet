@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+ <PropertyGroup>
+  <OutputType>Exe</OutputType>
+  <TargetFramework>net6.0</TargetFramework>
+  <Title>My nuget package</Title>
+  <PackageId>OctoApp_test_during_migration</PackageId>
+  <Version>12.4.0</Version>
+  <PackageVersion>1.0.0</PackageVersion>
+  <Authors>aashij</Authors>
+  <Company>GitHub</Company>
+  <PackageDescription>Test nuget package</PackageDescription>
+  <Copyright>test_copyright</Copyright>
+  <RepositoryUrl>https://github.com/aurora-nuget-v2/scaling-guacamole</RepositoryUrl>
+  <RepositoryType>git</RepositoryType>
+  <PackageReleaseNotes>test release notes</PackageReleaseNotes>
+  <PackageTags>latest</PackageTags>
+  <ImplicitUsings>enable</ImplicitUsings>
+  <Nullable>enable</Nullable>
+ </PropertyGroup>
+
+</Project>
