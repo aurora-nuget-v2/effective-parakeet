@@ -15,7 +15,7 @@ jobs:
      run: docker pull centos
    - name: Tag image
      run: docker tag centos ghcr.io/aurora-nuget-v2/effective-parakeet/centos
-   - name: Pull the image from the registry
+   - name: Push image
      run: docker push ghcr.io/aurora-nuget-v2/effective-parakeet/centos
    - name: List the image 
      run: docker image ls | grep centos
