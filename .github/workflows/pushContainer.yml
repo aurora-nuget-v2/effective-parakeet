@@ -1,0 +1,21 @@
+name: Push container package
+on: push
+
+permissions:
+ packages: read
+
+jobs:
+ all:
+  runs-on: ubuntu-latest
+  
+  steps:
+   - name: Login to GitHub container Registry
+     run: echo ${{ secrets.GITHUB_TOKEN }} | docker login ghcr.io -u ${{ github.actor }} --password-stdin
+   - name: Pull centos 
+     run: docker pull centos
+   - name: Tag image
+     run: docker tag centos ghcr.io/aurora-nuget-v2/effective-parakeet/centos
+   - name: Pull the image from the registry
+     run: docker push ghcr.io/aurora-nuget-v2/effective-parakeet/centos
+   - name: List the image 
+     run: docker image ls | grep centos
